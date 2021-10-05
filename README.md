@@ -1,16 +1,27 @@
-# Overview
-This project is based on [ASYML ViT](https://github.com/asyml/vision-transformer-pytorch). The code is tested with Python 3.8.5 and PyTorch 1.7.1 under Ubuntu 1804 equipped with four Nvidia GTX 1080 ti graphics cards.
+[//]: # (Referenced repo: https://github.com/arthurdouillard/CVPR2021_PLOP/blob/main/README.md)
+# Learning to Predict Trustworthiness with Steep Slope Loss
+
+[![Paper](https://img.shields.io/badge/arXiv-2110.00054-brightgreen)](https://arxiv.org/abs/2110.00054)
+
+
+![teaser](fig/teaser.png)
+
+
+## Abstract
+
+Understanding the trustworthiness of a prediction yielded by a classifier is critical for the safe and effective use of AI models. Prior efforts have been proven to be reliable on small-scale datasets. In this work, we study the problem of predicting trustworthiness on real-world large-scale datasets, where the task is more challenging due to high-dimensional features, diverse visual concepts, and large-scale samples. In such a setting, we observe that the trustworthiness predictors trained with prior-art loss functions, i.e., the cross entropy loss, focal loss, and true class probability confidence loss, are prone to view both correct predictions and incorrect predictions to be trustworthy. The reasons are two-fold. Firstly, correct predictions are generally dominant over incorrect predictions. Secondly, due to the data complexity, it is challenging to differentiate the incorrect predictions from the correct ones on real-world large-scale datasets. To improve the generalizability of trustworthiness predictors, we propose a novel steep slope loss to separate the features w.r.t. correct predictions from the ones w.r.t. incorrect predictions by two slide-like curves that oppose each other. The proposed loss is evaluated with two representative deep learning models, i.e., Vision Transformer and ResNet, as trustworthiness predictors.
+
+
+More details can be found in our paper ([arXiv](https://arxiv.org/abs/2110.00054)). This project is based on [ASYML ViT](https://github.com/asyml/vision-transformer-pytorch). The code is tested with Python 3.8.5 and PyTorch 1.7.1 under Ubuntu 1804 equipped with four Nvidia GTX 1080 ti graphics cards.
 
 
 ## Citation
 If you use this code for your research, please consider citing:
 ```
-@article{Luo_NeurIPS_2021,
+@inproceedings{Luo_NeurIPS_2021,
   title={Learning to Predict Trustworthiness with Steep Slope Loss},
   author={Luo, Yan and Wong, Yongkang and Kankanhalli, Mohan and Zhao, Qi},
-  journal={Advances in Neural Information Processing Systems},
-  volume={},
-  page={},
+  booktitle={Advances in Neural Information Processing Systems},
   year={2021}
 }
 ```
