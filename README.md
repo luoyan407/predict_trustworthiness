@@ -3,9 +3,7 @@
 
 [![Paper](https://img.shields.io/badge/arXiv-2110.00054-brightgreen)](https://arxiv.org/abs/2110.00054)
 
-
-![teaser](fig/teaser.png)
-
+<img src="fig/teaser.png" width="60%" height="60%">
 
 ## Abstract
 
